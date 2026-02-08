@@ -1,7 +1,29 @@
-I built called Lumi, an AI-powered app that turns your life moments into a short movie.
-The problem I noticed is that people take thousands of photos from trips, weekends, and events, but almost nothing happens with them — they just sit in your camera roll. The reason is that making a recap video takes time, editing skill, and effort, and most tools either require manual work or produce generic templates that don’t feel personal.
-So I built Lumi to remove that friction. The experience is simple: users select a set of photos, and Lumi automatically generates a recap with a beginning-middle-end storyline, highlights, and pacing — so it feels like a mini movie, not just a slideshow.
-From an execution standpoint, I built the mobile app using React Native with Expo, and used serverless backend functions with an OpenAI vision-capable model. The model analyzes the photos and returns structured outputs like scene order, key moments, and the overall vibe, and that structured output directly drives the recap generation.
-The biggest challenge was making the story consistently coherent — early versions felt random and didn’t flow emotionally. So I iterated heavily on prompting and output structure to enforce narrative progression and improve highlight selection.
-To validate it, I tested the MVP with a small group of users, and the strongest signal was that people immediately wanted to share their recaps because they felt emotionally personal, not templated.
-Overall, Lumi taught me a lot about building human-AI workflows — the key wasn’t just having a powerful model, but designing the product so the output felt intentional and trustworthy.
+Lumi is an AI-powered app that turns a set of photos into a short, story-driven recap that feels like a mini movie rather than a slideshow.
+
+## Problem
+People take thousands of photos from trips, weekends, and events, but rarely do anything with them. Creating a recap takes time and editing skill, and most tools either require manual work or produce generic templates that don’t feel personal.
+
+## Solution
+Users select a set of photos and Lumi automatically generates a recap with structured pacing, highlights, and a clear beginning-middle-end storyline.
+
+## How It Works
+Lumi uses an OpenAI vision-capable model to analyze selected photos and return structured outputs such as:
+- scene ordering
+- key moments
+- overall vibe / theme
+
+This output directly drives recap generation to ensure the final video feels coherent and intentional.
+
+## Tech Stack
+- React Native (Expo)
+- Serverless backend functions
+- OpenAI vision model
+
+## Key Challenge
+Early versions produced recaps that felt random and lacked narrative flow. I improved coherence by iterating on prompting and output structure to enforce stronger storytelling and highlight selection.
+
+## Validation
+Early MVP testing showed strong sharing intent — users immediately wanted to send recaps to friends because they felt emotionally personal rather than templated.
+
+## Key Takeaway
+Building Lumi reinforced that strong AI products depend as much on workflow and UX design as model capability. The product succeeds when the output feels trustworthy and intentional.
